@@ -8,6 +8,7 @@ export default function RoundedButton({
   as = 'button',
   href = '',
   className,
+  ...rest
 }) {
   const classes = classNames(
     'flex items-center justify-center h-12 px-12 shadow-lg hover:shadow-none transition-shadow text-sm text-white hover:bg-indigo-600 bg-indigo-500 font-bold rounded-full transform focus:outline-none focus:ring-2 ring-indigo-500 ring-offset-2',
@@ -30,7 +31,8 @@ export default function RoundedButton({
       href={href}
       whileHover={{translateY: 10}}
       whileTap={{scale: 0.8}}
-      className={classes}>
+      className={classes}
+      {...rest}>
       {children}
     </motion.a>
   );

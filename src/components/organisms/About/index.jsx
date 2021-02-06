@@ -27,7 +27,7 @@ const About = forwardRef(({title, content, className}, ref) => {
           <ContentText className="lg:text-left">{content.text}</ContentText>
         </div>
         <div className="mx-auto mt-6 lg:mr-0 lg:ml-auto lg:mt-0">
-          <RoundedButton as="a" href="./#">
+          <RoundedButton as="a" download href="./CV.pdf">
             {language.value === 'en' ? 'Download' : 'Unduh'} Resume
           </RoundedButton>
         </div>
