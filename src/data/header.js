@@ -1,6 +1,6 @@
 const header = {
   name: 'Annas Alghoffar',
-  profilePicture: './img/person.jpg',
+  profilePicture: './profile.png',
   job: 'Frontend Developer',
 };
 
